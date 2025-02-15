@@ -1,18 +1,15 @@
 # The goal:
-The goal is to make a steno dictionary that translates steno to braille.
-
-The program will allow us to pick which steno buttons we want to use, so people who prefer bottom row or alt layouts that have # as S1 can use it too.
+The goal is to make a steno dictionary that translates steno to braille. The program will allow us to pick which steno buttons we want to use, so people who prefer bottom row or alt layouts that have # as S1 can use it too.
 
 This should be a function with these parameters:
 
-`-Two strings, left and right hande, each having 3 or 4 steno buttons`
+`-Two strings, left and right hand, each having 3 or 4 steno buttons`
 
 `-An optional string of at least 1 button to act as 'space'`
 
 The function should return a dictionary with steno input keys and braille character values. There should be an option to use ASCII for 6 dots (⠿), but unicode goes all the way up to 8 dots (⣿). 
 
 The function should work for 3 or 4 buttons on each side, making as many definitions as the provided layout can handling. The function should reject any string that uses * star key.
-
 
 # There are a few resources to consider first:
 
