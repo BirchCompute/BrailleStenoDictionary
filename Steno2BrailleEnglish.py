@@ -18,12 +18,12 @@ def steno_to_braille(
         #The last 6 digits encode our steno input
         binary_string = bin(_c)[-6:]
         #This our dictionary value
-        ##We only want letters this time
         letter = English_string[_c-0x2800]
-        if(not letter.isupper()):
-            continue
+        ##We only want letters this time
+        #if(not letter.isupper()):
+        #    continue
         print(letter)
-        English_char = '{^' + letter + '^}'
+        English_char = '{^}' + letter + '{^}'
         #print(binary_string)
         #print(English_char)
 
@@ -51,7 +51,7 @@ def steno_to_braille(
     #Alphabetize
     res_dict = dict(sorted(res_dict.items(), key=lambda item: item[1]))
 
-    with open('BrailleStenoEnglishLetters.json', 'w', encoding='utf-8') as f:
+    with open('BrailleStenoEnglish.json', 'w', encoding='utf-8') as f:
         #print(res_dict)
         json.dump(res_dict, f, ensure_ascii=False, indent=4)
 
