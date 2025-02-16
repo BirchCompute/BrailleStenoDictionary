@@ -88,16 +88,11 @@ Some swizzling might need to happen. We need this.
 H  P- T- F -P  L  S- -T
 1  2  3  4  5  6  7   8
 ```
-but this backwards! We want biggest bit first!
-``` 
--T  S- L -P  F  T- P- H
- 1  2  3  4  5  6  7  8
-```
-As we can see with the disambiguating hyphens, there are some buttons on the left and the right hand side. We're going to want to take our inputs as two strings, left and right hand.
+As we can see with the disambiguating hyphens, there are some buttons on the left and the right hand side. We're going to want to take our inputs as two strings, left and right hand, and then we'll have to put a hyphen between left and right hand.
 
 ###  ~Binary to Braille dot patterns
 
-After we have a binary number, we can convert that to hex and add that to our unicode starting point which is 0x2800.
+We're going to do a for loop over the range of all dot patterns. We'll loop over the index so we can get both the chr(i) dot pattern character and the bin(i) binary string to convert to steno. This will also make it easier to fetch the proper position from the English character translation string.
 ```
 char(0x2800 + 0b00101010) = braille dot pattern character
 ``` 
