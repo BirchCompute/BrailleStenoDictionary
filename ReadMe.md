@@ -105,3 +105,9 @@ Wikipedia provides this awesome string. This is a translation of the English bra
  A1B'K2L@CIF/MSP"E3H9O6R^DJG>NTQ,*5<-U8V.%[$+X!&;:4\0Z7(_?W]#Y)=
  ```
  This means once we have our braille binary value, it's only a matter of looking up our English letter output.
+
+ # Conclusion
+
+ I was able to make 3 dictionaries. The first translates to dot patterns. The second translates to English. The third is like the second, but only A-Z. The hardest part was swizzling in python, trying to go from steno order to bit order and back. I made a list at first, but then a discovered the pattern and used string methods.
+
+Now that that's done, people can use open source steno software to learn how to type braille on a braille writer.
