@@ -11,14 +11,8 @@ def steno_to_braille(
     steno_string = left_hand_buttons + right_hand_buttons
 
 
-    #TPHFPL to 321456 to 0b543210
-    #left to right
-    steno_to_bin_list = [5,4,3,0,1,2]
-    #for i in steno_to_bin_list:
-    #    print(steno_string[i])
-
-
     res_dict = {}
+    steno_to_bin_list = [5,4,3,0,1,2]
     #loop through every dot pattern and index
     for _c in range(0x2801, 0x283F + 1):
         #The last 6 digits encode our steno input
