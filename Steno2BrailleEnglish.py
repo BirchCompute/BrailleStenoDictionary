@@ -10,7 +10,7 @@ def steno_to_braille(
         raise ValueError("There needs to be 3 buttons in each string")
     steno_string = left_hand_buttons + right_hand_buttons
 
-    English_string = f" A1B'K2L@CIF/MSP\"E3H9O6R^DJG>NTQ,*5<-U8V.%[$+X!&;:4\\0Z7(_?W]#Y)="
+    English_string = " A1B'K2L@CIF/MSP\"E3H9O6R^DJG>NTQ,*5<-U8V.%[$+X!&;:4\\0Z7(_?W]#Y)="
     res_dict = {}
     steno_to_bin_list = [5,4,3,0,1,2]
     #loop through every dot pattern and index
